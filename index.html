@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="hiba">
+    <meta name="keywords" content="Hiba,html,css,flexbox">
+    <title>Hiba</title>
     <link rel="stylesheet" href="style.css">
     <style>
         nav{
@@ -14,6 +16,7 @@
             justify-content: space-between;
             align-items: center;
             border-radius: 20px;
+            flex-wrap: wrap;
 
         }
         .menu{
@@ -49,7 +52,7 @@
             transition: 2s;
         }
         .logo:hover{
-         rotate: 90deg;
+         rotate: 360deg;
         }
         li :hover{
          background-color: bisque;
@@ -66,6 +69,7 @@
             flex-direction: column;
             align-items: start;
             justify-content: space-between;
+        
         }
         .titres{
             background-color: burlywood;
@@ -84,6 +88,7 @@
             height: 1000px;
             justify-content: space-around;
             width: 100%;
+            flex-wrap: wrap;
         }
         .item{
             height: 300px;
@@ -128,6 +133,38 @@
             width: 100%;
             rotate: 360deg;
             
+        }
+        @media (max-width:800px)
+        {
+            nav{
+                flex-direction: column;
+                height: auto;
+            }
+            ul {
+                flex-direction: column;
+                height: auto;
+                width:100%;
+                align-items: center;
+            }
+            .titres{
+                width: 80%;
+                border-radius: 10px;
+                margin: 10px;
+            }
+            .item{
+                width: 80%;
+            }
+            .container {
+                align-items: center;
+                height: auto;
+            }
+            .titres{
+                height: auto;
+        }
+        .menu{
+            width: 50%;
+            align-items: center;
+        }
         }
     </style>
 </head>
